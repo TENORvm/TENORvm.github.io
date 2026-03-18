@@ -11,25 +11,19 @@
 </head>
 <body>
 
-<!-- ══ NAV ══════════════════════════════════════════════ -->
 <nav id="navbar">
   <a href="#" class="nav-logo">R<span>.</span>Pisarenko</a>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
-    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
-    <button class="admin-btn" id="adminBtn" onclick="openAdminLogin()">Admin</button>
   </div>
 </nav>
 
-<!-- ══ HERO ═════════════════════════════════════════════ -->
 <section class="hero" id="home">
   <div class="hero-left">
     <div class="hero-tag">Game Designer</div>
-    <h1 class="hero-name">
-      Ruslan<br><span class="last">Pisarenko</span>
-    </h1>
+    <h1 class="hero-name">Ruslan<br><span class="last">Pisarenko</span></h1>
     <p class="hero-title">Crafting worlds that stay with you</p>
     <p class="hero-bio">
       Game design analyst from Zaporizhzhia, Ukraine. I study how games create fear,
@@ -38,18 +32,9 @@
       at international game studios.
     </p>
     <div class="hero-meta">
-      <div class="meta-item">
-        <span class="meta-label">Born</span>
-        <span class="meta-value">Ukraine 🇺🇦</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Currently</span>
-        <span class="meta-value">Zaporizhzhia</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Age</span>
-        <span class="meta-value">20</span>
-      </div>
+      <div class="meta-item"><span class="meta-label">Born</span><span class="meta-value">Ukraine 🇺🇦</span></div>
+      <div class="meta-item"><span class="meta-label">Currently</span><span class="meta-value">Zaporizhzhia</span></div>
+      <div class="meta-item"><span class="meta-label">Age</span><span class="meta-value">20</span></div>
       <div class="meta-item">
         <span class="meta-label">Status</span>
         <span class="meta-value" style="display:flex;align-items:center;gap:6px">
@@ -65,16 +50,26 @@
   <div class="hero-right">
     <div class="avatar-frame">
       <!--
-        To add your photo:
-        1. Upload your-photo.jpg to the same folder
-        2. Remove the avatar-placeholder div below
-        3. Uncomment the img tag
+        HOW TO ADD YOUR PHOTO:
+
+        OPTION A — via URL link (easiest, no file upload needed):
+          1. Go to https://imgur.com
+          2. Click "New post" and upload your photo
+          3. Right-click the uploaded image → "Copy image address"
+          4. Delete the avatar-placeholder div below
+          5. Uncomment and edit the img tag:
+             <img src="https://i.imgur.com/XXXXXXX.jpg" alt="Ruslan Pisarenko" class="avatar-img">
+
+        OPTION B — via file in repo:
+          1. Rename your photo to "photo.jpg"
+          2. Upload photo.jpg to the same GitHub folder as index.html
+          3. Same steps 4-5 as above but use: src="photo.jpg"
       -->
-      <div class="avatar-placeholder" id="avatarPlaceholder">
+      <div class="avatar-placeholder">
         <span class="icon">◈</span>
         <span class="hint">Your Photo</span>
       </div>
-      <!-- <img src="photo.jpg" alt="Ruslan Pisarenko" class="avatar-img"> -->
+      <!-- <img src="https://i.imgur.com/XXXXXXX.jpg" alt="Ruslan Pisarenko" class="avatar-img"> -->
     </div>
     <div class="status-badge">
       <span class="status-dot"></span>
@@ -83,9 +78,8 @@
   </div>
 </section>
 
-<!-- ══ ABOUT ═════════════════════════════════════════════ -->
-<section id="about" data-section="about">
-  <div class="visibility-badge">Visible</div>
+<!-- 01 ABOUT -->
+<section id="about">
   <div class="section-inner">
     <div class="section-header reveal">
       <span class="section-number">01</span>
@@ -94,30 +88,10 @@
     </div>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>
-          I am a <strong>game design analyst</strong> with a focus on horror and action-RPG
-          titles. My work begins not with tools or engines but with a single question:
-          <em>why does this work?</em> — the mechanical, narrative, and systemic choices
-          that make certain games impossible to forget.
-        </p>
-        <p>
-          My first published design document is a <strong>35-page deep analysis of Cry of Fear</strong>
-          — examining enemy psychology, pacing architecture, level design philosophy,
-          and how a free Half-Life mod became one of the most psychologically resonant
-          horror experiences ever created. It is the beginning of a larger body of work.
-        </p>
-        <p>
-          Upcoming analyses span the <strong>Dead Space series, Silent Hill series,
-          Resident Evil series, Amnesia series</strong> (currently playing
-          Amnesia: The Bunker), <strong>Dark Souls series</strong>, and selected
-          non-horror titles where design craft reaches the same level of intentionality.
-          The scope is not limited to horror — it is limited to <em>games that mean something</em>.
-        </p>
-        <p>
-          Currently <strong>open to work</strong> — seeking a position at an international
-          game studio where design is taken seriously as a discipline.
-          Destination: abroad. The long game.
-        </p>
+        <p>I am a <strong>game design analyst</strong> with a focus on horror and action-RPG titles. My work begins not with tools or engines but with a single question: <em>why does this work?</em> — the mechanical, narrative, and systemic choices that make certain games impossible to forget.</p>
+        <p>My first published design document is a <strong>35-page deep analysis of Cry of Fear</strong> — examining enemy psychology, pacing architecture, level design philosophy, and how a free Half-Life mod became one of the most psychologically resonant horror experiences ever created. It is the beginning of a larger body of work.</p>
+        <p>Upcoming analyses span the <strong>Dead Space series, Silent Hill series, Resident Evil series, Amnesia series</strong> (currently playing Amnesia: The Bunker), <strong>Dark Souls series</strong>, and selected non-horror titles where design craft reaches the same level of intentionality. The scope is not limited to horror — it is limited to <em>games that mean something</em>.</p>
+        <p>Currently <strong>open to work</strong> — seeking a position at an international game studio where design is taken seriously as a discipline. Destination: abroad. The long game.</p>
       </div>
       <div class="reveal">
         <p class="goals-title">Currently seeking</p>
@@ -143,9 +117,8 @@
   </div>
 </section>
 
-<!-- ══ PROJECTS ══════════════════════════════════════════ -->
-<section id="projects" data-section="projects">
-  <div class="visibility-badge">Visible</div>
+<!-- 02 PROJECTS -->
+<section id="projects">
   <div class="section-inner">
     <div class="section-header reveal">
       <span class="section-number">02</span>
@@ -153,99 +126,62 @@
       <div class="section-line"></div>
     </div>
 
-    <!-- Design Documents Grid -->
     <div class="projects-grid">
-
-      <!-- CoF — First Published Work -->
       <div class="project-card reveal">
-        <div class="project-content">
-          <div class="project-meta-row">
-            <p class="project-tag">Design Analysis · First Published Work</p>
-            <span class="project-year">2024</span>
-          </div>
-          <h3 class="project-title">Cry of Fear<br><span class="project-subtitle">Design Document</span></h3>
-          <p class="project-desc">
-            My first published design document — 35 pages examining enemy psychology,
-            level pacing architecture, narrative mechanics, and sound design philosophy.
-            How a free Half-Life mod became one of the most emotionally resonant
-            horror experiences ever made.
-          </p>
-          <div class="project-tags-list">
-            <span class="ptag">Enemy Design</span>
-            <span class="ptag">Level Design</span>
-            <span class="ptag">Narrative</span>
-            <span class="ptag">Psychology</span>
-          </div>
-          <a href="https://www.notion.so/Cry-of-Fear-Game-Design-2cf335c808c880588d94f10d9cf9f52b"
-             target="_blank" class="project-link">Read Full Analysis →</a>
+        <div class="project-meta-row">
+          <p class="project-tag">Design Analysis · First Published Work</p>
+          <span class="project-year">Dec 2025</span>
         </div>
+        <h3 class="project-title">Cry of Fear<br><span class="project-subtitle">Design Document</span></h3>
+        <p class="project-desc">My first published design document — 35 pages examining enemy psychology, level pacing architecture, narrative mechanics, and sound design philosophy. How a free Half-Life mod became one of the most emotionally resonant horror experiences ever made.</p>
+        <div class="project-tags-list">
+          <span class="ptag">Enemy Design</span>
+          <span class="ptag">Level Design</span>
+          <span class="ptag">Narrative</span>
+          <span class="ptag">Psychology</span>
+        </div>
+        <a href="https://www.notion.so/Cry-of-Fear-Game-Design-2cf335c808c880588d94f10d9cf9f52b" target="_blank" class="project-link">Read Full Analysis →</a>
       </div>
 
-      <!-- Upcoming Analyses -->
       <div class="project-card reveal">
-        <div class="project-content">
-          <div class="project-meta-row">
-            <p class="project-tag">Analysis Pipeline · In Progress</p>
-            <span class="project-year">2025—</span>
-          </div>
-          <h3 class="project-title">Upcoming<br><span class="project-subtitle">Design Studies</span></h3>
-          <p class="project-desc">
-            A series of deep design analyses currently in research and writing.
-            Each study follows the same analytical framework — mechanics, narrative,
-            pacing, psychology — applied to different design languages.
-          </p>
-          <div class="project-tags-list">
-            <span class="ptag">Amnesia: The Bunker</span>
-            <span class="ptag">Dead Space series</span>
-            <span class="ptag">Silent Hill series</span>
-            <span class="ptag">Resident Evil series</span>
-            <span class="ptag">Amnesia series</span>
-            <span class="ptag">Dark Souls series</span>
-            <span class="ptag">+ Non-horror</span>
-          </div>
-          <span class="project-link" style="color:var(--muted);cursor:default">Coming soon</span>
+        <div class="project-meta-row">
+          <p class="project-tag">Analysis Pipeline · In Progress</p>
+          <span class="project-year">2026—</span>
         </div>
+        <h3 class="project-title">Upcoming<br><span class="project-subtitle">Design Studies</span></h3>
+        <p class="project-desc">A series of deep design analyses currently in research and writing. Each study follows the same analytical framework — mechanics, narrative, pacing, psychology — applied to different design languages.</p>
+        <div class="project-tags-list">
+          <span class="ptag">Amnesia: The Bunker</span>
+          <span class="ptag">Dead Space series</span>
+          <span class="ptag">Silent Hill series</span>
+          <span class="ptag">Resident Evil series</span>
+          <span class="ptag">Amnesia series</span>
+          <span class="ptag">Dark Souls series</span>
+          <span class="ptag">+ Non-horror</span>
+        </div>
+        <span class="project-link" style="color:var(--muted);cursor:default">Coming soon</span>
       </div>
-
     </div>
 
-    <!-- ══ VAULT — Game Projects ══ -->
+    <!-- VAULT -->
     <div class="vault-section reveal">
-
-      <div class="vault-header-label" style="
-        font-family: var(--mono);
-        font-size: 10px;
-        letter-spacing: 0.2em;
-        color: var(--muted);
-        text-transform: uppercase;
-        padding: 24px 0 12px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      ">
-        <span style="color:var(--red)">03</span>
+      <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;color:var(--muted);text-transform:uppercase;padding:24px 0 12px;display:flex;align-items:center;gap:12px;">
+        <span style="color:var(--red)">—</span>
         Game Projects
         <span style="flex:1;height:1px;background:linear-gradient(to right,var(--border),transparent)"></span>
       </div>
 
       <div class="vault-container" onclick="vaultClick()">
-
-        <!-- Scan line -->
         <div class="vault-scanline"></div>
-
-        <!-- Header bar -->
         <div class="vault-header">
           <span class="vault-lock-icon">⛓</span>
           <span class="vault-label">Classified · Access Restricted</span>
           <span class="vault-blink">█</span>
         </div>
 
-        <!-- Chains SVG -->
         <svg class="vault-chains" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-          <!-- Chain 1 — diagonal top-left to bottom-right -->
           <g opacity="0.12" stroke="#c0392b" fill="none" stroke-width="1.5">
             <line x1="0" y1="80" x2="1200" y2="340"/>
-            <!-- chain links along line 1 -->
             <ellipse cx="120" cy="107" rx="14" ry="7" transform="rotate(-12 120 107)"/>
             <ellipse cx="240" cy="134" rx="14" ry="7" transform="rotate(-12 240 134)"/>
             <ellipse cx="360" cy="161" rx="14" ry="7" transform="rotate(-12 360 161)"/>
@@ -256,7 +192,6 @@
             <ellipse cx="960" cy="296" rx="14" ry="7" transform="rotate(-12 960 296)"/>
             <ellipse cx="1080" cy="323" rx="14" ry="7" transform="rotate(-12 1080 323)"/>
           </g>
-          <!-- Chain 2 — diagonal top-right to bottom-left -->
           <g opacity="0.08" stroke="#c0392b" fill="none" stroke-width="1.5">
             <line x1="1200" y1="80" x2="0" y2="340"/>
             <ellipse cx="1080" cy="107" rx="14" ry="7" transform="rotate(12 1080 107)"/>
@@ -269,7 +204,6 @@
             <ellipse cx="240" cy="296" rx="14" ry="7" transform="rotate(12 240 296)"/>
             <ellipse cx="120" cy="323" rx="14" ry="7" transform="rotate(12 120 323)"/>
           </g>
-          <!-- Chain 3 — vertical center -->
           <g opacity="0.06" stroke="#c0392b" fill="none" stroke-width="1">
             <line x1="600" y1="60" x2="600" y2="420"/>
             <ellipse cx="600" cy="100" rx="7" ry="14"/>
@@ -279,7 +213,6 @@
             <ellipse cx="600" cy="340" rx="7" ry="14"/>
             <ellipse cx="600" cy="400" rx="7" ry="14"/>
           </g>
-          <!-- Padlock center -->
           <g transform="translate(572, 185)" opacity="0.15">
             <rect x="0" y="14" width="56" height="42" rx="3" stroke="#c0392b" stroke-width="2" fill="none"/>
             <path d="M10 14 Q10 0 28 0 Q46 0 46 14" stroke="#c0392b" stroke-width="2" fill="none"/>
@@ -287,139 +220,66 @@
           </g>
         </svg>
 
-        <!-- Card 1 -->
         <div class="vault-card">
           <div class="vault-card-bg"></div>
           <div class="vault-number">01</div>
           <div class="vault-content">
             <p class="vault-tag">Game Project · Horror</p>
             <h3 class="vault-title">Project ████████</h3>
-            <p class="vault-desc">
-              Something is being built. The atmosphere is wrong in all the right ways.
-              Details classified until further notice.
-            </p>
-            <div class="vault-tags">
-              <span class="ptag">Horror</span>
-              <span class="ptag">████████</span>
-              <span class="ptag">████</span>
-            </div>
+            <p class="vault-desc">Something is being built. The atmosphere is wrong in all the right ways. Details classified until further notice.</p>
+            <div class="vault-tags"><span class="ptag">Horror</span><span class="ptag">████████</span><span class="ptag">████</span></div>
           </div>
         </div>
 
-        <!-- Card 2 -->
         <div class="vault-card">
           <div class="vault-card-bg"></div>
           <div class="vault-number">02</div>
           <div class="vault-content">
             <p class="vault-tag">Game Project · Narrative</p>
             <h3 class="vault-title">Project ████</h3>
-            <p class="vault-desc">
-              It has a name. It has a world. It has a story worth telling.
-              That's all you get for now.
-            </p>
-            <div class="vault-tags">
-              <span class="ptag">Narrative</span>
-              <span class="ptag">████████</span>
-              <span class="ptag">??????</span>
-            </div>
+            <p class="vault-desc">It has a name. It has a world. It has a story worth telling. That's all you get for now.</p>
+            <div class="vault-tags"><span class="ptag">Narrative</span><span class="ptag">████████</span><span class="ptag">??????</span></div>
           </div>
         </div>
 
-        <!-- Easter egg overlay — full width -->
-        <div class="vault-overlay" style="grid-column: 1 / -1; position:absolute; inset:0; z-index:5; display:flex; align-items:center; justify-content:center; cursor:pointer;">
+        <div class="vault-overlay" style="position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;cursor:pointer;">
           <div class="vault-message">
             <div class="vault-message-title">ACCESS DENIED</div>
             <div class="vault-message-sub">classification level: ██████</div>
           </div>
         </div>
 
-        <!-- Date footer -->
         <div class="vault-date">Release date: unknown · Check back later</div>
-
       </div>
     </div>
-    <!-- end vault -->
 
   </div>
 </section>
 
-<!-- ══ GALLERY ═══════════════════════════════════════════ -->
-<section id="gallery" data-section="gallery">
-  <div class="visibility-badge">Visible</div>
+<!-- 03 CONTACT -->
+<section id="contact">
   <div class="section-inner">
     <div class="section-header reveal">
       <span class="section-number">03</span>
-      <h2 class="section-title">Gallery</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item reveal" id="gal-1">
-        <div class="gallery-placeholder"><span class="ph-icon">◈</span><span>Photo 01</span></div>
-        <div class="overlay"><span class="gallery-caption">Add caption</span></div>
-      </div>
-      <div class="gallery-item reveal" id="gal-2">
-        <div class="gallery-placeholder"><span class="ph-icon">◈</span><span>Photo 02</span></div>
-        <div class="overlay"><span class="gallery-caption">Add caption</span></div>
-      </div>
-      <div class="gallery-item reveal" id="gal-3">
-        <div class="gallery-placeholder"><span class="ph-icon">◈</span><span>Photo 03</span></div>
-        <div class="overlay"><span class="gallery-caption">Add caption</span></div>
-      </div>
-      <div class="gallery-item reveal" id="gal-4">
-        <div class="gallery-placeholder"><span class="ph-icon">◈</span><span>Photo 04</span></div>
-        <div class="overlay"><span class="gallery-caption">Add caption</span></div>
-      </div>
-      <div class="gallery-item reveal" id="gal-5">
-        <div class="gallery-placeholder"><span class="ph-icon">◈</span><span>Photo 05</span></div>
-        <div class="overlay"><span class="gallery-caption">Add caption</span></div>
-      </div>
-      <div class="gallery-item reveal" id="gal-6">
-        <div class="gallery-placeholder"><span class="ph-icon">◈</span><span>Photo 06</span></div>
-        <div class="overlay"><span class="gallery-caption">Add caption</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ CONTACT ═══════════════════════════════════════════ -->
-<section id="contact" data-section="contact">
-  <div class="visibility-badge">Visible</div>
-  <div class="section-inner">
-    <div class="section-header reveal">
-      <span class="section-number">04</span>
       <h2 class="section-title">Contact</h2>
       <div class="section-line"></div>
     </div>
     <div class="contact-grid">
       <div class="reveal">
         <p class="contact-intro">Let's talk about games, horror, and design.</p>
-        <p class="contact-text">
-          Open to collaborations, feedback on design documents, freelance
-          game design work, and conversations about horror as a medium.
-          Response time: usually within 24 hours.
-        </p>
+        <p class="contact-text">Open to collaborations, feedback on design documents, freelance game design work, and conversations about horror as a medium. Response time: usually within 24 hours.</p>
       </div>
       <div class="contact-links reveal">
         <a href="mailto:mixfin434@gmail.com" class="contact-link">
-          <div>
-            <span class="contact-link-label">Email</span>
-            <span class="contact-link-value">mixfin434@gmail.com</span>
-          </div>
+          <div><span class="contact-link-label">Email</span><span class="contact-link-value">mixfin434@gmail.com</span></div>
           <span class="contact-arrow">→</span>
         </a>
         <a href="https://t.me/EZZOLIM" target="_blank" class="contact-link">
-          <div>
-            <span class="contact-link-label">Telegram</span>
-            <span class="contact-link-value">@EZZOLIM</span>
-          </div>
+          <div><span class="contact-link-label">Telegram</span><span class="contact-link-value">@EZZOLIM</span></div>
           <span class="contact-arrow">→</span>
         </a>
-        <a href="https://www.notion.so/Cry-of-Fear-Game-Design-2cf335c808c880588d94f10d9cf9f52b"
-           target="_blank" class="contact-link">
-          <div>
-            <span class="contact-link-label">Portfolio</span>
-            <span class="contact-link-value">Cry of Fear — Design Study</span>
-          </div>
+        <a href="https://www.notion.so/Cry-of-Fear-Game-Design-2cf335c808c880588d94f10d9cf9f52b" target="_blank" class="contact-link">
+          <div><span class="contact-link-label">Portfolio</span><span class="contact-link-value">Cry of Fear — Design Study</span></div>
           <span class="contact-arrow">→</span>
         </a>
       </div>
@@ -427,52 +287,11 @@
   </div>
 </section>
 
-<!-- ══ FOOTER ════════════════════════════════════════════ -->
 <footer>
-  <span>© 2025 Ruslan Pisarenko</span>
+  <span>© 2026 Ruslan Pisarenko</span>
   <span>Game Designer · Zaporizhzhia, Ukraine</span>
   <span style="color:var(--red)">Built with intention</span>
 </footer>
-
-<!-- ══ ADMIN PANEL ════════════════════════════════════════ -->
-<div class="admin-panel" id="adminPanel">
-  <div class="admin-panel-title">⬡ Visibility Control</div>
-  <div class="toggle-row">
-    <span class="toggle-label">About section</span>
-    <label class="toggle"><input type="checkbox" checked onchange="toggleSection('about', this.checked)"><span class="slider"></span></label>
-  </div>
-  <div class="toggle-row">
-    <span class="toggle-label">Projects section</span>
-    <label class="toggle"><input type="checkbox" checked onchange="toggleSection('projects', this.checked)"><span class="slider"></span></label>
-  </div>
-  <div class="toggle-row">
-    <span class="toggle-label">Gallery section</span>
-    <label class="toggle"><input type="checkbox" checked onchange="toggleSection('gallery', this.checked)"><span class="slider"></span></label>
-  </div>
-  <div class="toggle-row">
-    <span class="toggle-label">Contact section</span>
-    <label class="toggle"><input type="checkbox" checked onchange="toggleSection('contact', this.checked)"><span class="slider"></span></label>
-  </div>
-  <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">
-    <div class="admin-panel-title" style="margin-bottom:12px">Gallery Items</div>
-    <div id="galleryToggles"></div>
-  </div>
-  <button onclick="logoutAdmin()" style="margin-top:16px;width:100%;background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
-    Logout
-  </button>
-</div>
-
-<!-- ══ LOGIN MODAL ════════════════════════════════════════ -->
-<div class="modal-overlay" id="loginModal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeAdminLogin()">✕</button>
-    <h2 class="modal-title">Admin Access</h2>
-    <p class="modal-subtitle">Enter password to continue</p>
-    <input type="password" class="modal-input" id="adminPassword" placeholder="Password">
-    <button class="modal-submit" onclick="checkPassword()">Unlock Panel</button>
-    <p class="modal-error" id="loginError">Incorrect password. Try again.</p>
-  </div>
-</div>
 
 <script src="main.js"></script>
 </body>
