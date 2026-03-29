@@ -16,6 +16,7 @@
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
+    <a href="#test-tasks">Test Tasks</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -49,22 +50,6 @@
   </div>
   <div class="hero-right">
     <div class="avatar-frame">
-      <!--
-        HOW TO ADD YOUR PHOTO:
-
-        OPTION A — via URL link (easiest, no file upload needed):
-          1. Go to https://imgur.com
-          2. Click "New post" and upload your photo
-          3. Right-click the uploaded image → "Copy image address"
-          4. Delete the avatar-placeholder div below
-          5. Uncomment and edit the img tag:
-             <img src="https://i.imgur.com/XXXXXXX.jpg" alt="Ruslan Pisarenko" class="avatar-img">
-
-        OPTION B — via file in repo:
-          1. Rename your photo to "photo.jpg"
-          2. Upload photo.jpg to the same GitHub folder as index.html
-          3. Same steps 4-5 as above but use: src="photo.jpg"
-      -->
       <div class="avatar-placeholder">
         <span class="icon">◈</span>
         <span class="hint">Your Photo</span>
@@ -89,8 +74,8 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p>I am a <strong>game design analyst</strong> with a focus on horror and action-RPG titles. My work begins not with tools or engines but with a single question: <em>why does this work?</em> — the mechanical, narrative, and systemic choices that make certain games impossible to forget.</p>
-        <p>My first published design document is a <strong>35-page deep analysis of Cry of Fear</strong> — examining enemy psychology, pacing architecture, level design philosophy, and how a free Half-Life mod became one of the most psychologically resonant horror experiences ever created. It is the beginning of a larger body of work.</p>
-        <p>Upcoming analyses span the <strong>Dead Space series, Silent Hill series, Resident Evil series, Amnesia series</strong> (currently playing Amnesia: The Bunker), <strong>Dark Souls series</strong>, and selected non-horror titles where design craft reaches the same level of intentionality. The scope is not limited to horror — it is limited to <em>games that mean something</em>.</p>
+        <p>My published design documents include a <strong>35-page deep analysis of Cry of Fear</strong> — examining enemy psychology, pacing architecture, level design philosophy, and how a free Half-Life mod became one of the most psychologically resonant horror experiences ever created — and a <strong>full analysis of Amnesia: The Bunker</strong>, exploring survival tension, resource scarcity, and systemic fear design.</p>
+        <p>Upcoming analyses span the <strong>Dead Space series, Silent Hill series, Resident Evil series, Amnesia series</strong>, <strong>Dark Souls series</strong>, and selected non-horror titles where design craft reaches the same level of intentionality. The scope is not limited to horror — it is limited to <em>games that mean something</em>.</p>
         <p>Currently <strong>open to work</strong> — seeking a position at an international game studio where design is taken seriously as a discipline. Destination: abroad. The long game.</p>
       </div>
       <div class="reveal">
@@ -104,7 +89,7 @@
         <p class="goals-title" style="margin-top:24px">Analysis pipeline</p>
         <ul class="goals-list">
           <li>Cry of Fear — <span style="color:var(--gold)">Published ✓</span></li>
-          <li>Amnesia: The Bunker — <span style="color:var(--gold)">Playing now</span></li>
+          <li>Amnesia: The Bunker — <span style="color:var(--gold)">Published ✓</span></li>
           <li>Dead Space series — Planned</li>
           <li>Silent Hill series — Planned</li>
           <li>Resident Evil series — Planned</li>
@@ -127,6 +112,8 @@
     </div>
 
     <div class="projects-grid">
+
+      <!-- Cry of Fear -->
       <div class="project-card reveal">
         <div class="project-meta-row">
           <p class="project-tag">Design Analysis · First Published Work</p>
@@ -140,10 +127,28 @@
           <span class="ptag">Narrative</span>
           <span class="ptag">Psychology</span>
         </div>
-        <a href="https://www.notion.so/Cry-of-Fear-Game-Design-2cf335c808c880588d94f10d9cf9f52b" target="_blank" class="project-link">Read Full Analysis →</a>
+        <a href="https://amused-shoe-a79.notion.site/Cry-of-Fear-Game-Design-2cf335c808c880588d94f10d9cf9f52b" target="_blank" class="project-link">Read Full Analysis →</a>
       </div>
 
+      <!-- Amnesia: The Bunker -->
       <div class="project-card reveal">
+        <div class="project-meta-row">
+          <p class="project-tag">Design Analysis · Published</p>
+          <span class="project-year">2026</span>
+        </div>
+        <h3 class="project-title">Amnesia: The Bunker<br><span class="project-subtitle">Design Document</span></h3>
+        <p class="project-desc">A deep analysis of Frictional Games' most mechanically bold entry in the Amnesia series — examining survival tension, dynamic AI threat design, resource scarcity loops, and how systemic unpredictability redefines horror pacing in an open-ended environment.</p>
+        <div class="project-tags-list">
+          <span class="ptag">AI Design</span>
+          <span class="ptag">Survival Systems</span>
+          <span class="ptag">Tension Design</span>
+          <span class="ptag">Open Structure</span>
+        </div>
+        <a href="https://amused-shoe-a79.notion.site/Amnesia-The-Bunker-Game-Design-331335c808c880c497e4fc46a8e07da2?pvs=74" target="_blank" class="project-link">Read Full Analysis →</a>
+      </div>
+
+      <!-- Upcoming -->
+      <div class="project-card reveal" style="grid-column: 1 / -1;">
         <div class="project-meta-row">
           <p class="project-tag">Analysis Pipeline · In Progress</p>
           <span class="project-year">2026—</span>
@@ -151,7 +156,6 @@
         <h3 class="project-title">Upcoming<br><span class="project-subtitle">Design Studies</span></h3>
         <p class="project-desc">A series of deep design analyses currently in research and writing. Each study follows the same analytical framework — mechanics, narrative, pacing, psychology — applied to different design languages.</p>
         <div class="project-tags-list">
-          <span class="ptag">Amnesia: The Bunker</span>
           <span class="ptag">Dead Space series</span>
           <span class="ptag">Silent Hill series</span>
           <span class="ptag">Resident Evil series</span>
@@ -161,6 +165,7 @@
         </div>
         <span class="project-link" style="color:var(--muted);cursor:default">Coming soon</span>
       </div>
+
     </div>
 
     <!-- VAULT -->
@@ -256,11 +261,64 @@
   </div>
 </section>
 
-<!-- 03 CONTACT -->
-<section id="contact">
+<!-- 03 TEST TASKS -->
+<section id="test-tasks">
   <div class="section-inner">
     <div class="section-header reveal">
       <span class="section-number">03</span>
+      <h2 class="section-title">Test Tasks</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="reveal" style="margin-bottom:40px;">
+      <p style="font-family:var(--serif);font-size:18px;color:#9999b8;line-height:1.8;max-width:680px;">
+        Design assignments completed for game studios during the hiring process — each one a real brief, with a real deadline, and a real attempt to communicate design thinking under pressure.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- CODEFATHER -->
+      <div class="project-card reveal">
+        <div class="project-meta-row">
+          <p class="project-tag">Test Task · Studio Brief</p>
+          <span class="project-year">2025</span>
+        </div>
+        <h3 class="project-title">CODEFATHER<br><span class="project-subtitle">Game Design Task</span></h3>
+        <p class="project-desc">A design assignment completed as part of the hiring process for CODEFATHER studio. The document presents a full response to the brief — game mechanics proposal, design reasoning, and structured documentation.</p>
+        <div class="project-tags-list">
+          <span class="ptag">Game Design</span>
+          <span class="ptag">Mechanics</span>
+          <span class="ptag">Documentation</span>
+        </div>
+        <a href="https://amused-shoe-a79.notion.site/Test-task-for-the-game-2dd335c808c8809cbc5df40f89347d94?pvs=74" target="_blank" class="project-link">View Document →</a>
+      </div>
+
+      <!-- Octo Games -->
+      <div class="project-card reveal">
+        <div class="project-meta-row">
+          <p class="project-tag">Test Task · Studio Brief</p>
+          <span class="project-year">2025</span>
+        </div>
+        <h3 class="project-title">Octo Games<br><span class="project-subtitle">Game Design Task</span></h3>
+        <p class="project-desc">A design assignment completed for Octo Games studio. Covers the full design response to the studio's brief — systems thinking, player experience considerations, and structured design documentation.</p>
+        <div class="project-tags-list">
+          <span class="ptag">Game Design</span>
+          <span class="ptag">Systems</span>
+          <span class="ptag">Documentation</span>
+        </div>
+        <a href="https://amused-shoe-a79.notion.site/Test-task-for-the-game-300335c808c8802299cdd72ecd8920aa?pvs=74" target="_blank" class="project-link">View Document →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 04 CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-number">04</span>
       <h2 class="section-title">Contact</h2>
       <div class="section-line"></div>
     </div>
@@ -278,8 +336,12 @@
           <div><span class="contact-link-label">Telegram</span><span class="contact-link-value">@EZZOLIM</span></div>
           <span class="contact-arrow">→</span>
         </a>
-        <a href="https://www.notion.so/Cry-of-Fear-Game-Design-2cf335c808c880588d94f10d9cf9f52b" target="_blank" class="contact-link">
-          <div><span class="contact-link-label">Portfolio</span><span class="contact-link-value">Cry of Fear — Design Study</span></div>
+        <a href="https://amused-shoe-a79.notion.site/Cry-of-Fear-Game-Design-2cf335c808c880588d94f10d9cf9f52b" target="_blank" class="contact-link">
+          <div><span class="contact-link-label">Design Study</span><span class="contact-link-value">Cry of Fear — Analysis</span></div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://amused-shoe-a79.notion.site/Amnesia-The-Bunker-Game-Design-331335c808c880c497e4fc46a8e07da2?pvs=74" target="_blank" class="contact-link">
+          <div><span class="contact-link-label">Design Study</span><span class="contact-link-value">Amnesia: The Bunker — Analysis</span></div>
           <span class="contact-arrow">→</span>
         </a>
       </div>
